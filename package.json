@@ -2,10 +2,13 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "dis/server.js", "type" : "module",
+  "main": "dis/server.js",
   "scripts": {
     "start": "nodemon src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.x"
   },
   "keywords": [],
   "author": "",
