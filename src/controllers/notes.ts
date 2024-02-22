@@ -5,6 +5,8 @@ export const getNotes: RequestHandler = async (req, res, next) => {
     try {
         // throw Error("Bazingal!");
         const notes = await NoteModel.find().exec();
+        console.log(notes);
+
         res.status(200).json(notes);
     } catch (error) {
         next(error);
